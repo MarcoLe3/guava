@@ -68,7 +68,7 @@ import org.jspecify.annotations.Nullable;
  * the superclass? Note that Listener (which we also reflect on) still lives here.
  */
 @ReflectionSupport(value = ReflectionSupport.Level.FULL)
-public abstract class AbstractFuture<V extends @Nullable Object> extends AbstractFutureState<V> {
+public class AbstractFuture<V extends @Nullable Object> extends AbstractFutureState<V> {
   /*
    * All static initialization should be performed in AbstractFutureState: AbstractFutureState's
    * initialization may trigger logging, which may assume that AbstractFuture is initialized.
